@@ -8,21 +8,21 @@ const rename = require('gulp-rename');
 
 
 function minifyHTML() {
-    return gulp.src('src/assets/**/*.html')
+    return gulp.src('./src/assets/**/*.html')
     .pipe(htmlmin( {collapseWhitespace: true } )) // Remove os espaços em branco e formata o html em minificado
     .pipe(rename( {suffix: ".min"} ))
     .pipe(gulp.dest('build/assets'))
 }
 
 function compilerCSS() {
-    return gulp.src('src/assets/sass/*.sass')
+    return gulp.src('./src/assets/sass/*.sass')
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('style.css'))
         .pipe(gulp.dest('src/assets'))
 }
 
 function minifyCSS() {
-    return gulp.src('src/assets/*.css')
+    return gulp.src('./src/assets/*.css')
         .pipe(uglifycss({ "uglyComments": true } ))
         .pipe(rename({suffix: ".min"}))
         .pipe(gulp.dest('build/assets/css'))
@@ -34,7 +34,7 @@ function minifyCSS() {
 
 
 function IMG() {
-    return gulp.src('src/assets/imgs/**/*.*')
+    return gulp.src('./src/assets/imgs/**/*.*')
         .pipe(gulp.dest('build/assets/imgs'))
 }
 

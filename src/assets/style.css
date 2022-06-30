@@ -1,7 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,900;1,800&display=swap");
 body {
+  display: flex;
+  align-items: center;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   background-color: whitesmoke;
   width: 100%;
   height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 560px;
+  max-width: 680px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto 0;
+  gap: 1rem;
+  border-radius: 12px;
+  box-shadow: #C0BFBF 0px 3px 12px 0px;
+  overflow: hidden;
+}
+.main__img-bg {
+  display: block;
+  width: 60%;
+  height: 100%;
+  background: center right/cover no-repeat url("/build/assets/imgs/bg-log-my-hero-academia-01.png"), #F15B25;
+}
+
+.form__form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-right: 1.5rem;
+}
+.form__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #F15B25;
+  margin-bottom: 1.5rem;
+}
+.form__form-warpper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.form__form-warpper [data-showPass] {
+  cursor: pointer;
+}
+.form__form-warpper [data-showPass]:hover {
+  color: #ff804e;
+}
+.form__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+  color: #F15B25;
+}
+.form__icon .bi {
+  padding: 0;
+  margin: 0;
+}
+.form__input {
+  width: 100%;
+  height: 30px;
+  padding-left: 2.2rem;
+  color: #595A5A;
+  border: 1px solid #C0BFBF;
+  border-radius: 0.125rem;
+  outline: none;
+}
+.form__input:focus-within {
+  outline: 1px solid #F15B25;
+  border: 1px solid #F15B25;
+}
+.form__input::placeholder {
+  color: #595A5A;
+}
+.form__terms-condition {
+  font-size: 0.9rem;
+  color: #595A5A;
+  letter-spacing: 1px;
+}
+.form__terms-condition a {
+  color: #F15B25;
+  font-weight: 600;
+}
+.form__terms-condition a:focus-within {
+  outline: 1px solid;
+}
+.form__submit {
+  font-size: 1.2rem;
+  padding: 0.625rem;
+  border: 0;
+  color: #222326;
+  font-weight: 900;
+  background-color: #F15B25;
+  border-radius: 0.125rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  transition: all 0.25s ease;
+}
+.form__submit:hover {
+  background-color: #ff804e;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -50px 36px -28px inset;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.footer {
+  margin-top: 5rem;
+}
+.footer__author {
+  font-size: 1.3rem;
+  color: #F15B25;
+}
+.footer__author .bi {
+  font-size: 1.5rem;
+  color: #F15B25;
+}
+.footer__author .bi:hover {
+  color: #ff804e;
 }
