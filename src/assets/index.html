@@ -25,21 +25,22 @@
                     <label class="form__icon" for="email">
                         <i class="bi bi-envelope-fill"></i>
                     </label>
-                    <input type="text" name="email" id="email" placeholder="Email" class="form__input" data-type="email">
+                    <input type="email" name="email" id="email" placeholder="Email" class="form__input" data-type="email" required>
                 </fieldset>
                 
                 <fieldset class="form__form-warpper">
                     <label class="form__icon" for="name">
                         <i class="bi bi-person-fill"></i>
                     </label>
-                    <input type="text" name="name" id="name" placeholder="Name" class="form__input" data-type="name">
+                    <input type="text" name="name" id="name" placeholder="Name" class="form__input" data-type="name" required>
                 </fieldset>
                 
                 <fieldset class="form__form-warpper">
                     <label class="form__icon" for="password" data-showPass>
                         <i class="bi bi-eye-slash-fill"></i>
                     </label>
-                    <input type="password" name="password" id="password" placeholder="Password" class="form__input" data-type="pass">
+                    <input type="password" name="password" id="password" placeholder="Password" class="form__input" data-type="password" password required>
+                    <span class="error-span">Error de mensagem</span>
                 </fieldset>
                 
                 <p class="form__terms-condition">By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
@@ -50,8 +51,11 @@
     </main>
 
     <footer class="footer">
-        <p class="footer__author">created by Anthoni - <a href="https://github.com/anthonibs" target="_blank"><i class="bi bi-github"></i></a></p>
+        <p class="footer__author"><a href="https://github.com/anthonibs" target="_blank"><i class="bi bi-github"></i></a> created by Anthoni</p>
     </footer>
+
+    <script src="/src/assets/js/application/_showPassword.js"></script>
+    <script type="module" src="/src/assets/js/views/app.js"></script>
 </body>
 
 </html>

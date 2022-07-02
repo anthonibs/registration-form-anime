@@ -78,6 +78,7 @@ body {
 .form__input:focus-within {
   outline: 1px solid #F15B25;
   border: 1px solid #F15B25;
+  transition: all 0.6s;
 }
 .form__input::placeholder {
   color: #595A5A;
@@ -110,6 +111,14 @@ body {
   box-shadow: rgba(0, 0, 0, 0.2) 0px -50px 36px -28px inset;
   cursor: pointer;
   transition: all 0.25s ease;
+}
+.form .error-span {
+  display: none;
+  position: absolute;
+  bottom: -15px;
+  font-size: 0.7rem;
+  color: red;
+  font-weight: 600;
 }
 
 .footer {

@@ -49,9 +49,11 @@
         &:focus-within
             outline: 1px solid variables.$color-main
             border: 1px solid variables.$color-main
+            transition: all .6s
         
         &::placeholder
             color: variables.$color-ter
+      
 
     &__terms-condition
         font-size: .9rem
@@ -82,5 +84,11 @@
             box-shadow: rgba(0, 0, 0, 0.20) 0px -50px 36px -28px inset
             cursor: pointer
             transition: all  .25s ease
-
-            
+    
+    .error-span
+        display: none
+        position: absolute
+        bottom: -15px
+        font-size: .7rem
+        color: red
+        font-weight: 600

@@ -7,6 +7,7 @@ const concat = require('gulp-concat');
 const rename = require('gulp-rename');
 
 
+
 function minifyHTML() {
     return gulp.src('./src/assets/**/*.html')
     .pipe(htmlmin( {collapseWhitespace: true } )) // Remove os espaços em branco e formata o html em minificado
@@ -28,10 +29,12 @@ function minifyCSS() {
         .pipe(gulp.dest('build/assets/css'))
 }
 
-// function minifyJS() {
-
-// }
-
+function minifyJS() {
+    return gulp.src('src/assets/js/**/*.js')
+        // .pipe(uglifycss())
+        // .pipe(rename({suffix: ".min"}))
+        .pipe(gulp.dest('build/assets/js'))
+}
 
 function IMG() {
     return gulp.src('./src/assets/imgs/**/*.*')
@@ -42,11 +45,13 @@ gulp.task('minifyHTML', minifyHTML)
 gulp.task('compilerCSS', compilerCSS)
 gulp.task('IMG', IMG)
 gulp.task('minifyCSS', minifyCSS)
+gulp.task('minifyJS', minifyJS)
 
 
 module.exports = {
     minifyHTML,
     compilerCSS,
     IMG,
-    minifyCSS
+    minifyCSS,
+    minifyJS
 }
