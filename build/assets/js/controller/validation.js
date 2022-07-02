@@ -1,9 +1,17 @@
 export function Validation(input) {
     const datasetType = input.dataset.type
 
-   
+    const teste = document.querySelector('.form__form-warpper')
     console.log(msgError(datasetType, input));
-    msgError(datasetType, input)
+
+    if(input.validity.valid) {
+        input.parentElement.classList.remove('input-container--invalido')
+        input.parentElement.querySelector('.error-span').innerHTML = ''
+    } else {
+        input.parentElement.classList.add('input-container--invalido')
+        input.parentElement.querySelector('.error-span').innerHTML = msgError(datasetType, input)
+    }
+
 }
 
 const arrValidity = [

@@ -26,6 +26,7 @@
                         <i class="bi bi-envelope-fill"></i>
                     </label>
                     <input type="email" name="email" id="email" placeholder="Email" class="form__input" data-type="email" required>
+                    <span class="error-span">Error de mensagem</span>
                 </fieldset>
                 
                 <fieldset class="form__form-warpper">
@@ -33,13 +34,14 @@
                         <i class="bi bi-person-fill"></i>
                     </label>
                     <input type="text" name="name" id="name" placeholder="Name" class="form__input" data-type="name" required>
+                    <span class="error-span">Error de mensagem</span>
                 </fieldset>
                 
                 <fieldset class="form__form-warpper">
                     <label class="form__icon" for="password" data-showPass>
                         <i class="bi bi-eye-slash-fill"></i>
                     </label>
-                    <input type="password" name="password" id="password" placeholder="Password" class="form__input" data-type="password" password required>
+                    <input type="password" name="password" id="password" placeholder="Password" class="form__input" data-type="password" password required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,10}$">
                     <span class="error-span">Error de mensagem</span>
                 </fieldset>
                 

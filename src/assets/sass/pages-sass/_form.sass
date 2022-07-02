@@ -1,10 +1,12 @@
 @use '../variables'
 
 .form
+    width: 50%
+
     &__form-container
         display: flex
         flex-direction: column
-        gap: 1.25rem
+        gap: .625rem
         padding-right: 1.5rem
 
     &__title
@@ -14,11 +16,13 @@
         margin-bottom: 1.5rem
 
     &__form-warpper
-        display: flex
-        align-items: center
+        width: 100%
         position: relative
 
         [data-showPass]
+            display: flex
+            align-items: center
+            justify-content: center
             cursor: pointer
 
             &:hover
@@ -39,12 +43,15 @@
     
     &__input
         width: 100%
-        height: 30px
+        height: 40px
         padding-left: 2.2rem
         color: variables.$color-ter
         border: 1px solid variables.$color-quar
         border-radius: .125rem
         outline: none
+        box-sizing: border-box
+
+        background: transparent
 
         &:focus-within
             outline: 1px solid variables.$color-main
@@ -53,7 +60,7 @@
         
         &::placeholder
             color: variables.$color-ter
-      
+         
 
     &__terms-condition
         font-size: .9rem
@@ -84,11 +91,14 @@
             box-shadow: rgba(0, 0, 0, 0.20) 0px -50px 36px -28px inset
             cursor: pointer
             transition: all  .25s ease
-    
+        
     .error-span
         display: none
-        position: absolute
-        bottom: -15px
+        position: relative
+        top: 3px
         font-size: .7rem
         color: red
-        font-weight: 600
+
+    .input-container--invalido .error-span
+        display: block
+        width: 100%

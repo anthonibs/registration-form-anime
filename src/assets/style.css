@@ -26,15 +26,18 @@ body {
 }
 .main__img-bg {
   display: block;
-  width: 60%;
+  width: 50%;
   height: 100%;
   background: center right/cover no-repeat url("/build/assets/imgs/bg-log-my-hero-academia-01.png"), #F15B25;
 }
 
+.form {
+  width: 50%;
+}
 .form__form-container {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 0.625rem;
   padding-right: 1.5rem;
 }
 .form__title {
@@ -44,11 +47,13 @@ body {
   margin-bottom: 1.5rem;
 }
 .form__form-warpper {
-  display: flex;
-  align-items: center;
+  width: 100%;
   position: relative;
 }
 .form__form-warpper [data-showPass] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 .form__form-warpper [data-showPass]:hover {
@@ -68,12 +73,14 @@ body {
 }
 .form__input {
   width: 100%;
-  height: 30px;
+  height: 40px;
   padding-left: 2.2rem;
   color: #595A5A;
   border: 1px solid #C0BFBF;
   border-radius: 0.125rem;
   outline: none;
+  box-sizing: border-box;
+  background: transparent;
 }
 .form__input:focus-within {
   outline: 1px solid #F15B25;
@@ -114,11 +121,14 @@ body {
 }
 .form .error-span {
   display: none;
-  position: absolute;
-  bottom: -15px;
+  position: relative;
+  top: 3px;
   font-size: 0.7rem;
   color: red;
-  font-weight: 600;
+}
+.form .input-container--invalido .error-span {
+  display: block;
+  width: 100%;
 }
 
 .footer {
