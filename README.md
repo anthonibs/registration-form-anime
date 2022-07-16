@@ -1,10 +1,12 @@
 # TELA DE REGISTRO
-***
 [![Captura-de-tela-16-07-2022-16-19-37.png](https://i.postimg.cc/xCN0KN1C/Captura-de-tela-16-07-2022-16-19-37.png)](https://postimg.cc/Fdm5vRc5)
 
 ## Objetivos💡
-***
+
 O objetivo desse projeto foi colocar em prática os conteúdos dos cursos da [Alura](https://www.alura.com.br/) como mensagem de erros quando o campo do formulário não for preenchido com as informações corretas, uso de pré-processadores CSS e uso de ferramentas para automatizar e aprimorar seu fluxo de trabalho GULP.
+
+## Demo do site
+
 
 ## Tecnologias e ferramentas utilizadas:
 
@@ -36,12 +38,12 @@ npm start
 ```
 
 ## ☕ Seja um dos contribuidores
-***
+
 Quer fazer parte desse projeto? Clique [AQUI](https://github.com/anthonibs/registration-form-anime/blob/main/COOPERATION.md) e leia como contribuir.
 
 
 ## Licença
-***
+
 Esse projeto está sob licença. Veja o arquivo [MIT](https://github.com/anthonibs/registration-form-anime/blob/main/LICENSE) para mais detalhes.
 
 
