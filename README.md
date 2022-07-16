@@ -7,6 +7,8 @@ O objetivo desse projeto foi colocar em prática os conteúdos dos cursos da [Al
 
 ## Demo do site
 
+https://user-images.githubusercontent.com/77931577/179373793-829ac815-1e90-45a1-9851-7c7cb6cbc0ba.mp4
+
 
 ## Tecnologias e ferramentas utilizadas:
 
